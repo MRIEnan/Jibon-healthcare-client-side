@@ -1,0 +1,32 @@
+.about-section-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.about-section-image-container{
+    width: 100%;
+}
+
+.about-section-image-container img{
+    width: 70%;
+}
+
+.about-section-info-container{
+    padding-left: 10px;
+}
+
+.about-section-info-container ul li{
+    list-style: circle;
+}
+
+@media only screen and ( max-width:678px ) {
+    .about-section-container{
+        grid-template-columns: repeat(1,1fr)
+    }
+    .about-section-image-container img{
+        width: 100%;
+    }
+    .about-section-info-container h2{
+        text-align: center;
+    }
+}

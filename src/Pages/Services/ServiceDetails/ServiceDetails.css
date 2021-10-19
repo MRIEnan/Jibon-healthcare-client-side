@@ -1,0 +1,44 @@
+.single-service-details-container{
+    text-align: center;
+}
+
+.single-service-title-container h2{
+    margin: 10px;
+}
+.single-service-title-container h5{
+    margin: 10px;
+}
+
+.single-service-title-container-icon{
+    color: #004690;
+}
+
+.single-service-description{
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+.btn-regular{
+    background-color: #004690;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 10px 18px;
+    margin: 10px;
+    border: 2px solid #ffffff;
+}
+
+.btn-regular:hover{
+    border: 2px solid #004690;
+    background-color: #ffffff;
+    color: #004690;
+}
+
+@media only screen and (max-width: 678px) {
+    .single-service-details-container{
+        margin-top: 30px;
+    }
+    .single-service-description{
+        width: 90%;
+    }       
+}

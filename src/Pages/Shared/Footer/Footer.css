@@ -1,0 +1,44 @@
+.footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #004690;
+}
+
+.contact-us-section{
+    width: 270px;
+    color: #ffffff;
+}
+.contact-us-section h1{
+    text-align: center;
+}
+
+.quick-links-section{
+    display: grid;
+    width: 270px;
+    text-align: center;
+    color: #ffffff;
+}
+.quick-links-section a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.feedback-section h1{
+    color: #ffffff;
+    text-align: center;
+}
+.feedback-form input{
+    width: calc(100% - 10px);
+}
+.feedback-form button{
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+}
+.feedback-form button:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, .34);
+}

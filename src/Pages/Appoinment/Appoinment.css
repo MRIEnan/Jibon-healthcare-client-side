@@ -1,0 +1,45 @@
+.appoinment-section-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 20px;
+}
+
+.appoinment-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appoinment-inner-form{
+    width: 80%;
+}
+
+.appoinment-inner-form input{
+    width: 100%;
+    height: 22px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #004690;
+    /* background-color: #dddddd; */
+    box-shadow:  0 0 0 2px rgba(0, 0, 0, .23), 0 0 10px 4px rgba(0, 0, 0, .23);
+}
+
+.appoinment-schedule{
+    display: grid;
+    place-items: center;
+}
+.appoinment-schedule h3{
+    text-align: center;
+}
+
+.appoinment-schedule table{
+    width: 240px;
+}
+
+@media only screen and (max-width: 678px) {
+    .appoinment-section-container{
+        grid-template-columns: 1fr;
+    }
+}

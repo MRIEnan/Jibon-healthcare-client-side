@@ -1,0 +1,22 @@
+.services-container{
+    text-align: center;
+    padding: 10px;
+}
+.services-container-title{
+    font-size: 44px;
+    margin: 10px;
+}
+.services-container-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 678) {
+    .services-container-card{
+        width: 100%;
+    }
+}

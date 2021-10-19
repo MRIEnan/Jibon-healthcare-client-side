@@ -1,0 +1,13 @@
+.login-container{
+    text-align: center;
+}
+
+.login-container input{
+    width: 200px;
+    height: 22px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 6px;
+    border: 1px solid #004690;
+    background-color: #f0f0f0;
+}
