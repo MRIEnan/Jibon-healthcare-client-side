@@ -24,7 +24,7 @@ const ServiceDetails = ({children}) => {
 
     return (
         <div className="single-service-details-container">
-            <div className="single-service-title-container">
+            <div id="top" className="single-service-title-container">
                 <div className="single-service-title-container-icon">
                     <Icofont icon={singleService?.icoName} size="10"/>
                 </div>

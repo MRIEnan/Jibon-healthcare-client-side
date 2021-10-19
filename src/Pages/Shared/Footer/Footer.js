@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import {NavLink} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import { NavHashLink } from 'react-router-hash-link';
+
 
 const Footer = () => {
     const {user} = useAuth();
@@ -15,11 +16,11 @@ const Footer = () => {
             </div>
             <div className="quick-links-section">
                 <h1>Quick Links</h1>
-                <NavLink to="/home">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/services">Services</NavLink>
-                {user.email && <NavLink to="/appoinment">Appointment</NavLink>}
-                {!user.email && <NavLink to="/login">Log in</NavLink>}
+                <NavHashLink to="/home#home-top">Home</NavHashLink>
+                <NavHashLink to="/about#top">About</NavHashLink>
+                <NavHashLink to="/services#top">Services</NavHashLink>
+                {user.email && <NavHashLink to="/appoinment#top">Appointment</NavHashLink>}
+                {!user.email && <NavHashLink to="/login#top">Log in</NavHashLink>}
             </div>
             <div className="feedback-section">
                 <h1>Feedback</h1>

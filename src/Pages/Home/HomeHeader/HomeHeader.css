@@ -9,8 +9,10 @@
 }
 
 .home-header-left-container{
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
     height: 100%;
     width: 600px;
     display: flex;
@@ -91,10 +93,10 @@
 
 @media only screen and (max-width: 678px) {
     .home-header-left-container{
-        background-image: url('../../../images//medical-stethoscope-white-surface.jpg');
+        /* background-image: url('../../../images/medical-stethoscope-white-surface.jpg'); */
+        background-image: url('../../../images/new6.jpg');
         height: 100%;
         width: 100%;
-        background-size: cover;
     }
     .home-header-left{
         padding-left: 10px;

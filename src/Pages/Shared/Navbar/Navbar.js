@@ -1,9 +1,9 @@
 import React from 'react';
 import './Navbar.css';
 import jibonLogo from '../../../images/jibon-logo.jpg';
-import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import Icofont from 'react-icofont';
+import { NavHashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
     const {user,logOut} = useAuth();
@@ -32,19 +32,19 @@ const Navbar = () => {
                     </div>
                     <div className="nav-all-item-container">
                         <div className="nav-item-box">
-                            <NavLink to="/home">Home</NavLink>
+                            <NavHashLink to="/home#home-top">Home</NavHashLink>
                         </div>
                         <div className="nav-item-box">
-                            <NavLink to="/about">About</NavLink>
+                            <NavHashLink to="/about#top">About</NavHashLink>
                         </div>
                         <div className="nav-item-box">
-                            <NavLink to="/services">Services</NavLink>
+                            <NavHashLink to="/services#top">Services</NavHashLink>
                         </div>
                         {user.email && <div className="nav-item-box">
-                            <NavLink to="/appoinment">Appoinment</NavLink>
+                            <NavHashLink to="/appoinment#top">Appoinment</NavHashLink>
                         </div>}
                         {!user.email?<div className="nav-item-box">
-                            <NavLink to="/login">Log in</NavLink>
+                            <NavHashLink to="/login#top">Log in</NavHashLink>
                         </div>: <button onClick={logOut} className="btn-log-out">Log out</button>}
                         {user.email && <img style={{textAlign:'center',width:'40px',height:'40px'}} src={user?.photoURL} alt="img" title={user.displayName} /> }
                     </div>

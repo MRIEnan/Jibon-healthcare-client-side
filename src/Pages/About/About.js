@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div>
             <div className="services-container-top">
-                <div>
+                <div id="top">
                     <h1>About</h1>
                     <h3>Responsibilty is only preference.</h3>
                 </div>

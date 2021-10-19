@@ -3,6 +3,8 @@ import './Login.css';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import Icofont from 'react-icofont';
 import useAuth from '../../hooks/useAuth';
+import { NavHashLink } from 'react-router-hash-link';
+
 
 const Login = () => {
     const {signInUsingGoogle,setIsLoading,setErr,logInUsingPassword,handleEmailChange,err,handlePasswordChange} = useAuth();
@@ -48,7 +50,7 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <h2>Login</h2>
+            <h2 id="top">Login</h2>
             <form onSubmit={handleEmailPasswordLogIn}>
                 <input onChange={handleEmailChange} type="email" name="" id="" placeholder="Please enter your email"/>
                 <br/>
@@ -57,7 +59,7 @@ const Login = () => {
                 <button className="btn-regular" type="submit">Log in</button>
             </form>
             {<h5>{err}</h5>}
-            <p>You have no Account? <NavLink className='btn-regular' style={{textDecoration:'none'}} to="/signup">sign up</NavLink></p>
+            <p>You have no Account? <NavHashLink className='btn-regular' style={{textDecoration:'none'}} to="/signup#top">sign up</NavHashLink></p>
             <hr style={{width: '250px'}}/>
             <p style={{margin: "10px 0 20px 0"}}>Log in with</p>
             <Icofont onClick={handleGoogleSignIn} className='btn-regular'  icon="brand-google" size="3"/>

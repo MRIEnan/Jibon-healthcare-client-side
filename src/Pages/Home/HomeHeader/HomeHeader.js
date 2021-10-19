@@ -7,7 +7,7 @@ const HomeHeader = () => {
     return (
         <>
         <div className="home-header-container">
-            <div className="home-header-left-container">
+            <div id="home-top" className="home-header-left-container">
                 <div className="home-header-left">
                     <h1>We Have Fantastic Experts Doctors.</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium voluptates at, consectetur eos aliquid perferendis recusandae, sequi reiciendis suscipit soluta saepe est consequuntur odio assumenda voluptate! Dolorem, praesentium? Quod.</p>
